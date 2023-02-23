@@ -1,0 +1,20 @@
+CONDA_SUBDIR=osx-64 conda create -n soyadapt_env_x86 python=3.7.7 pysam
+conda activate soyadapt_env_x86
+conda config --env --set subdir osx-64
+mamba install -c jaredgk -c bioconda py-popgen
+
+installed:
+mamba install -c conda-forge jupyter-offlinenotebook
+VCFtools
+BCFtools 
+Samtools
+
+
+not installed:
+which HTSlib
+which plink 1.9
+which plink 2.0
+which SHAPEIT
+which Beagle 5.0
+which Picard
+

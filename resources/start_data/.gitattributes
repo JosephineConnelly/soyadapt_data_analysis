@@ -1,0 +1,4 @@
+/Users/josephinelovemachine/soyadapt_data_analysis/resources/start_data filter=lfs diff=lfs merge=lfs -text
+/Users/josephinelovemachine/soyadapt_data_analysis/resources/start_data/soybean_resequencing_MQ30.vcf.gz filter=lfs diff=lfs merge=lfs -text
+/Users/josephinelovemachine/soyadapt_data_analysis/resources/start_data/soybean_resequencing_MQ30.vcf.idx filter=lfs diff=lfs merge=lfs -text
+/Users/josephinelovemachine/soyadapt_data_analysis/resources/start_data/soybean_resequencing_MQ30.vcf.save filter=lfs diff=lfs merge=lfs -text
