@@ -6,10 +6,10 @@ The data analysis is done and will be specified at the top of each workflow:
     - on my mac computer ZSH
     - on the GenomeDK cluster in BASH
 
-The setup and startingpoint of the project is in the notebook startfile.ipynb
+The setup and starting point of the project is in the notebookstartfile.ipynb
 
 i will keep this standardised structure adapted from https://snakemake.readthedocs.io/en/stable/snakefiles/best_practices.html#snakefiles-best-practices
-i will keep the filestructure and contents up to date!
+i will keep the file structure and contents up to date!
 Last updated see last commit. 
 
 # project structure
@@ -19,34 +19,44 @@ project name is <soyadapt_data_analysis>
     ├── .gitignore
     ├── README.md
     ├── LICENSE.md
+    ├── .vscode
+    │   ├── settings.json
     ├── results
     ├── resources
-    │   ├── start_data
-    |   │   ├── collected_start_data.vcf
-    |   │   ├── collected_start_data.vcf.gz
-    |   │   ├── collected_start_data.vcf.gz.csi
-    |   │   ├── collected_start_data.vcf.gz.tbi
-    |   │   ├── chr.txt
-    |   │   ├── population_groups.xls
-    |   │   └── population_groups.xls
+    │   ├── start_data (no bigger than 100MB!!)
+    |   │   ├── tree.txt
+    |   │   ├── Population_name_two.txt
+    |   │   ├── Population_name_one.txt
+    |   │   ├── pop.txt
+    |   │   ├── METADATA_soybean_resequencing_MQ30.md
+    |   │   └── accessions.xlsx
     |   └── generated_data
-    |   │   └── logfile
+    |   │   └── logfiles
     ├── workflow
     │   ├── envs
+    |   │   ├── environment_make #step by step how i made the environments in this repository.)
     |   │   ├── pp_env_x86.yaml
-    |   │   └── pp_env_linux.yaml
+    |   │   └── pp_env_x86.txt
     │   ├── scripts
-    |   │   ├── script1.py
-    |   │   └── script2.R
+    |   │   ├── some-script1.py
+    |   │   └── some-script.R
     │   ├── notebooks
-    |   │   ├── startfile.py.ipynb (this file!)
-    |   │   └── notebook2.r.ipynb
-    │   ├── report
-    |   │   ├── plot1.rst
-    |   │   └── plot2.rst
+    |   │   ├── step_1_startfile.ipynb
+    |   │   ├── step_2_merge.ipynb
+    |   │   ├── step_2_merge_2.ipynb
+    |   │   ├── step_3_filter.ipynb
+    |   │   ├── step_4 metadata_file_generation.ipynb
+    |   │   ├── step_8_calculate.ipynb
+    |   │   ├── file_conversion.ipynb
+    |   │   ├── out.model
+    |   │   └── step_8_calculate_R.r.ipynb
+    │   ├── reports
+    |   │   ├── some-plot1.rst
+    |   │   └── some-plot2.rst
     |   └── gwsfile
     ├── config
-    │   ├── config.yaml
+    │   ├── README.md
+    │   ├── some-config.yaml
     │   └── some-sheet.tsv
 
 
