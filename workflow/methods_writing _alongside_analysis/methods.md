@@ -22,7 +22,10 @@ So what torben did to it
 
 ## 2. Merge data for analysis
 
+merge and intersect
 
+
+impute step: 
 see my github for the layout of the project
 
 *initial look at the data and the quality*
@@ -58,4 +61,6 @@ according to chat gpt"When preparing a reference panel for use with Beagle, ther
 
 
 ## 3. Filter 
+
+i am going to checking for sample duplication and remove with IBS/IBD thresholds of 95 or 99% to declare samples as identical. as in @pavan20
 ## 4. Generate metadata
