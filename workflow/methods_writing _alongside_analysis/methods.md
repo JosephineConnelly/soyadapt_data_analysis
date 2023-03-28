@@ -16,18 +16,26 @@ urlcolor: "blue"
 
 *My data as i recive it*
 
-So what torben did to it
+So what Torben did
 
 ## 1. Setup Project
 
+To compile my data for data analysis i need to extract the snp data from the 10 known founders from the 20087 accessions in the data.
+I have a list of 10 founders (resources/start_data/founders.txt)
+i extracted the founders from the gringlobal 50ksnp data using bcftools
+The data file is downloaded from https://soybase.org/snps/
+soysnp50k_wm82.a2_41317.vcf.gz
+
+Using bcftools i renamed all the chromosomes to the same. (Gm01-Gm20)
+i made files only including data attached to the refrence chromosomes, so no scaffolds or mt data. 
+
 ## 2. Merge data for analysis
 
-merge and intersect
+intersect
+i intersected the data. 
+So only keeping the 50kSNP data for all accessions
 
-
-impute step: 
-see my github for the layout of the project
-
+## impute step not now
 *initial look at the data and the quality*
 
 *merge the WGS VCF files and the 'founders'*
@@ -61,6 +69,7 @@ according to chat gpt"When preparing a reference panel for use with Beagle, ther
 
 
 ## 3. Filter 
+
 
 i am going to checking for sample duplication and remove with IBS/IBD thresholds of 95 or 99% to declare samples as identical. as in @pavan20
 ## 4. Generate metadata

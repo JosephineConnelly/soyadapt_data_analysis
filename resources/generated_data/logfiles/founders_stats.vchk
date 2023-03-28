@@ -1,0 +1,104 @@
+# This file was produced by bcftools stats (1.9+htslib-1.9) and can be plotted using plot-vcfstats.
+# The command line was:	bcftools stats 
+#
+# Definition of sets:
+# ID	[2]id	[3]tab-separated file names
+ID	0	<STDIN>
+# SN, Summary numbers:
+#   number of records   .. number of data rows in the VCF
+#   number of no-ALTs   .. reference-only sites, ALT is either "." or identical to REF
+#   number of SNPs      .. number of rows with a SNP
+#   number of MNPs      .. number of rows with a MNP, such as CC>TT
+#   number of indels    .. number of rows with an indel
+#   number of others    .. number of rows with other type, for example a symbolic allele or
+#                          a complex substitution, such as ACT>TCGA
+#   number of multiallelic sites     .. number of rows with multiple alternate alleles
+#   number of multiallelic SNP sites .. number of rows with multiple alternate alleles, all SNPs
+# 
+#   Note that rows containing multiple types will be counted multiple times, in each
+#   counter. For example, a row with a SNP and an indel increments both the SNP and
+#   the indel counter.
+# 
+# SN	[2]id	[3]key	[4]value
+SN	0	number of samples:	10
+SN	0	number of records:	41948
+SN	0	number of no-ALTs:	0
+SN	0	number of SNPs:	41948
+SN	0	number of MNPs:	0
+SN	0	number of indels:	0
+SN	0	number of others:	0
+SN	0	number of multiallelic sites:	0
+SN	0	number of multiallelic SNP sites:	0
+# TSTV, transitions/transversions:
+# TSTV	[2]id	[3]ts	[4]tv	[5]ts/tv	[6]ts (1st ALT)	[7]tv (1st ALT)	[8]ts/tv (1st ALT)
+TSTV	0	33122	8826	3.75	33122	8826	3.75
+# SiS, Singleton stats:
+# SiS	[2]id	[3]allele count	[4]number of SNPs	[5]number of transitions	[6]number of transversions	[7]number of indels	[8]repeat-consistent	[9]repeat-inconsistent	[10]not applicable
+SiS	0	1	54	48	6	0	0	0	0
+# AF, Stats by non-reference allele frequency:
+# AF	[2]id	[3]allele frequency	[4]number of SNPs	[5]number of transitions	[6]number of transversions	[7]number of indels	[8]repeat-consistent	[9]repeat-inconsistent	[10]not applicable
+AF	0	0.000000	12628	10068	2560	0	0	0	0
+AF	0	0.090000	4777	3803	974	0	0	0	0
+AF	0	0.110000	60	42	18	0	0	0	0
+AF	0	0.120000	5	5	0	0	0	0	0
+AF	0	0.140000	41	31	10	0	0	0	0
+AF	0	0.160000	8	7	1	0	0	0	0
+AF	0	0.180000	2	2	0	0	0	0	0
+AF	0	0.190000	2646	2094	552	0	0	0	0
+AF	0	0.220000	41	35	6	0	0	0	0
+AF	0	0.240000	25	20	5	0	0	0	0
+AF	0	0.270000	2	2	0	0	0	0	0
+AF	0	0.290000	2200	1726	474	0	0	0	0
+AF	0	0.330000	41	35	6	0	0	0	0
+AF	0	0.340000	16	12	4	0	0	0	0
+AF	0	0.370000	4	2	2	0	0	0	0
+AF	0	0.380000	2	2	0	0	0	0	0
+AF	0	0.390000	2319	1814	505	0	0	0	0
+AF	0	0.430000	1	1	0	0	0	0	0
+AF	0	0.440000	75	59	16	0	0	0	0
+AF	0	0.490000	2234	1766	468	0	0	0	0
+AF	0	0.540000	29	20	9	0	0	0	0
+AF	0	0.550000	51	41	10	0	0	0	0
+AF	0	0.560000	2	2	0	0	0	0	0
+AF	0	0.590000	2444	1918	526	0	0	0	0
+AF	0	0.600000	7	6	1	0	0	0	0
+AF	0	0.610000	3	3	0	0	0	0	0
+AF	0	0.630000	1	0	1	0	0	0	0
+AF	0	0.640000	28	20	8	0	0	0	0
+AF	0	0.660000	40	31	9	0	0	0	0
+AF	0	0.690000	2284	1794	490	0	0	0	0
+AF	0	0.700000	1	1	0	0	0	0	0
+AF	0	0.710000	2	2	0	0	0	0	0
+AF	0	0.740000	23	20	3	0	0	0	0
+AF	0	0.770000	31	21	10	0	0	0	0
+AF	0	0.790000	1949	1529	420	0	0	0	0
+AF	0	0.820000	3	3	0	0	0	0	0
+AF	0	0.840000	41	31	10	0	0	0	0
+AF	0	0.860000	8	7	1	0	0	0	0
+AF	0	0.880000	44	38	6	0	0	0	0
+AF	0	0.890000	2694	2105	589	0	0	0	0
+AF	0	0.920000	1	1	0	0	0	0	0
+AF	0	0.930000	5	5	0	0	0	0	0
+AF	0	0.940000	16	12	4	0	0	0	0
+AF	0	0.990000	5114	3986	1128	0	0	0	0
+# QUAL, Stats by quality:
+# QUAL	[2]id	[3]Quality	[4]number of SNPs	[5]number of transitions (1st ALT)	[6]number of transversions (1st ALT)	[7]number of indels
+QUAL	0	998	41948	33122	8826	0
+# IDD, InDel distribution:
+# IDD	[2]id	[3]length (deletions negative)	[4]count
+# ST, Substitution types:
+# ST	[2]id	[3]type	[4]count
+ST	0	A>C	2362
+ST	0	A>G	8743
+ST	0	A>T	0
+ST	0	C>A	2050
+ST	0	C>G	0
+ST	0	C>T	7750
+ST	0	G>A	7768
+ST	0	G>C	0
+ST	0	G>T	2125
+ST	0	T>A	0
+ST	0	T>C	8861
+ST	0	T>G	2289
+# DP, Depth distribution
+# DP	[2]id	[3]bin	[4]number of genotypes	[5]fraction of genotypes (%)	[6]number of sites	[7]fraction of sites (%)

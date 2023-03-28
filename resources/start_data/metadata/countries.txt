@@ -1,0 +1,34 @@
+Japan	JAP
+Kazakhstan	EEU
+Korea South	ASI
+France	WEU	
+Belgium	WEU
+Algeria	AFR
+India	ASI
+Turkmenistan	ASI
+Bhutan	ASI
+United States	USA
+Serbia	EEU
+Vietnam	ASI
+Uzbekistan	ASI
+Austria	WEU
+Bulgaria	EEU
+Canada	CAN
+Sweden	WEU
+Ukraine	EEU
+Nepal	ASI
+Poland	EEU
+Portugal	WEU
+North Korea	ASI
+Netherlands	WEU
+Latvia	EEU
+Moldova	EEU
+Russian Federation	EEU
+China	CHI
+Eastern Europe	EEU
+Former Serbia and Montenegro	EEU	
+Unknown	N
+Hungary	EEU
+Romania	EEU	
+Georgia	EEU
+Germany	WEU
