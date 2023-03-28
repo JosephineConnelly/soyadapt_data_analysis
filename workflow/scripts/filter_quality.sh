@@ -47,10 +47,10 @@ bcftools filter soybean_resequencing_MQ30.vcf.gz -e 'INFO/AF < 0.01' 'F_MISSING 
 
 # index the filtered file
 
-bcftools index soybean_resequencing_MQ30_qf.vcf.gz
+bcftools index filtered/soybean_resequencing_MQ30_qf.vcf.gz
 
 #count snps in the filtered file there were 9677024 snps in the original file
-bcftools view --no-header -G -m 2 -M 2 --types snps soybean_resequencing_MQ30_qf.vcf.gz | wc -l
+bcftools view --no-header -G -m 2 -M 2 --types snps filtered/soybean_resequencing_MQ30_qf.vcf.gz | wc -l
 
 
 # when the test file worked i did it to the cca_sbpa_Gm_only.vcf.gz
