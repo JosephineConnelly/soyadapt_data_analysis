@@ -36,7 +36,14 @@ cd /home/joco/faststorage/data_analysis_soy
 # specify the output filetype -Oz (.vcf.gz)
 # specify the output VCF file name and destination
 
-bcftools filter cca_sbpa_Gm_only.vcf.gz -e INFO/AF < 0.01 -e F_MISSING > 0.20 -e HET > 0.10 || (ALT="." && REF!="N") -e F_MISSING > 0.05 -e N_ALLELES != 2 -Oz -o filtered/cca_sbpa_qf.vcf.gz 
+# try with the test file first soybean_resequencing_MQ30.vcf
+#then do it to the cca_sbpa_Gm_only.vcf.gz
+
+bgzip < soybean_resequencing_MQ30.vcf > soybean_resequencing_MQ30.vcf.gz
+
+bcftools index soybean_resequencing_MQ30.vcf.gz
+
+bcftools filter cca_sbpa_Gm_only.vcf.gz -e 'INFO/AF < 0.01' 'F_MISSING > 0.20 -e HET > 0.10 || (ALT="." && REF!="N")' 'F_MISSING > 0.05' 'N_ALLELES != 2' -Oz -o filtered/cca_sbpa_qf.vcf.gz 
 
 # index the filtered file
 
@@ -44,3 +51,14 @@ bcftools index cca_sbpa_qf.vcf.gz
 
 #count snps in the filtered file there were 9677024 snps in the original file
 bcftools view --no-header -G -m 2 -M 2 --types snps cca_sbpa_qf.vcf.gz | wc -l
+
+
+# when the test file worked i did it to the cca_sbpa_Gm_only.vcf.gz
+#bcftools filter cca_sbpa_Gm_only.vcf.gz -e 'INFO/AF < 0.01' 'F_MISSING > 0.20 -e HET > 0.10 || (ALT="." && REF!="N")' 'F_MISSING > 0.05' 'N_ALLELES != 2' -Oz -o filtered/cca_sbpa_qf.vcf.gz 
+
+# index the filtered file
+
+#bcftools index cca_sbpa_qf.vcf.gz
+
+#count snps in the filtered file there were 9677024 snps in the original file
+#bcftools view --no-header -G -m 2 -M 2 --types snps cca_sbpa_qf.vcf.gz | wc -l
