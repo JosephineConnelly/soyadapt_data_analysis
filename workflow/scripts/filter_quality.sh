@@ -9,19 +9,8 @@
 #SBATCH --time=06:00:00                               # Time limit hrs:min:sec
 #SBATCH --output=serial_output_%j.out                  # Standard output and error log
 
-#do the same for the cca_sbpa
-#no need to rename the chromosomes
-#only include chromosomes
-conda activate soy_data_setup
+# here i am trying the quality filter (qf) for the cca_sbpa
 
-cd joco/faststorage/data_analysis_soy/
-
-
-
-
-
-
-echo hello world
 conda activate soy_data_setup
 cd /home/joco/faststorage/data_analysis_soy
 pwd
@@ -36,12 +25,12 @@ pwd
 # specify the output filetype -Oz (.vcf.gz)
 # specify the output VCF file name
 
-bcftools filter cca_sbpa_Gm.vcf.gz \
+bcftools filter cca_sbpa_Gm_only.vcf.gz \
 -e 'INFO/AF < 0.01' \ 
 -e 'F_MISSING > 0.20' \ 
 -e 'HET > 0.10 || (ALT="." && REF!="N")' \ 
 -e 'F_MISSING > 0.05' \ 
 -e 'N_ALLELES != 2' \ 
--Oz -o filtered/cca_sbpa_f_qf.vcf.gz 
+-Oz -o filtered/cca_sbpa_qf.vcf.gz 
 
-bcftools index cca_sbpa_f_qf.vcf.gz
+bcftools index cca_sbpa_qf.vcf.gz
