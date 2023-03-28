@@ -39,6 +39,8 @@ cd /home/joco/faststorage/data_analysis_soy
 bcftools filter cca_sbpa_Gm_only.vcf.gz -e INFO/AF < 0.01 -e F_MISSING > 0.20 -e HET > 0.10 || (ALT="." && REF!="N") -e F_MISSING > 0.05 -e N_ALLELES != 2 -Oz -o filtered/cca_sbpa_qf.vcf.gz 
 
 # index the filtered file
+
 bcftools index cca_sbpa_qf.vcf.gz
+
 #count snps in the filtered file there were 9677024 snps in the original file
 bcftools view --no-header -G -m 2 -M 2 --types snps cca_sbpa_qf.vcf.gz | wc -l
