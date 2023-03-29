@@ -43,18 +43,15 @@ bgzip < soybean_resequencing_MQ30.vcf > soybean_resequencing_MQ30.vcf.gz
 
 bcftools index soybean_resequencing_MQ30.vcf.gz
 
-bcftools filter soybean_resequencing_MQ30.vcf.gz -e 'INFO/AF < 0.01' 'F_MISSING > 0.20 -e HET > 0.10 || (ALT="." && REF!="N")' 'F_MISSING > 0.05' 'N_ALLELES != 2' -Oz -o filtered/soybean_resequencing_MQ30_qf.vcf.gz 
+bcftools view -m 2 -M 2 --types=snps soybean_resequencing_MQ30.vcf.gz -Ov |bcftools view -S ^<(paste <(bcftools query -f '[%SAMPLE\t]\n' soybean_resequencing_MQ30.vcf.gz | head -1 | tr '\t' '\n') <(bcftools query -f '[%GT\t]\n' soybean_resequencing_MQ30.vcf.gz | awk -v OFS="\t" '{for (i=1;i<=NF;i++) if ($i == "./.") sum[i]+=1 } END {for (i in sum) print i, sum[i] / NR }' | sort -k1,1n | cut -f 2) | awk '{ if ($2 > 0.80) print $1 }') soybean_resequencing_MQ30.vcf.gz | bgzip > testdata_qf.vcf.gz  
 
-# index the filtered file
-
-bcftools index filtered/soybean_resequencing_MQ30_qf.vcf.gz
+bcftools index soybean_qf.vcf.gz
+  
 
 #count snps in the filtered file there were 9677024 snps in the original file
 bcftools view --no-header -G -m 2 -M 2 --types snps filtered/soybean_resequencing_MQ30_qf.vcf.gz | wc -l
 
-
 # when the test file worked i did it to the cca_sbpa_Gm_only.vcf.gz
-#bcftools filter cca_sbpa_Gm_only.vcf.gz -e 'INFO/AF < 0.01' 'F_MISSING > 0.20 -e HET > 0.10 || (ALT="." && REF!="N")' 'F_MISSING > 0.05' 'N_ALLELES != 2' -Oz -o filtered/cca_sbpa_qf.vcf.gz 
 
 # index the filtered file
 
