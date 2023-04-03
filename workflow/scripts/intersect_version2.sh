@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --account=QGG_plants
-#SBATCH --job-name=intersect                           # Job name
+#SBATCH --job-name=intersect_v2                           # Job name
 ##SBATCH --mail-type=END,FAIL                          # Mail events (NONE, BEGIN, END, FAIL, ALL)
 ##SBATCH --mail-user=josephineconnelly@qgg.au.dk     # Where to send mail
 #SBATCH --ntasks=1                                    #
@@ -23,8 +23,3 @@ bcftools isec /home/joco/faststorage/data_analysis_soy/cca_sbpa_Gm_only.vcf.gz /
 bcftools view /home/joco/faststorage/data_analysis_soy/output_dir/0002.vcf.gz -Oz -o /home/joco/faststorage/data_analysis_soy/intersect_cca_sbpa_f.vcf.gz 
 
 bcftools index /home/joco/faststorage/data_analysis_soy/intersect_cca_sbpa_f.vcf.gz
-
-
-
-
-
