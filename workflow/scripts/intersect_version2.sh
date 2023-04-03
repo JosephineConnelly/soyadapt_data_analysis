@@ -16,13 +16,13 @@ conda activate soy_data_setup
 
 cd /home/joco/faststorage/data_analysis_soy
 
-bcftools isec cca_sbpa_Gm_only.vcf.gz founders_Gm_only.vcf.gz -p output_dir
+bcftools isec /home/joco/faststorage/data_analysis_soy/cca_sbpa_Gm_only.vcf.gz /home/joco/faststorage/data_analysis_soy/founders_Gm_only.vcf.gz -p /home/joco/faststorage/data_analysis_soy/output_dir
 
 #the second file generated called 0002.vcf.gz contains the SNPs that are present in both input files.
 
-bcftools view output_dir/0002.vcf.gz -Oz -o intersect_cca_sbpa_f.vcf.gz 
+bcftools view /home/joco/faststorage/data_analysis_soy/output_dir/0002.vcf.gz -Oz -o /home/joco/faststorage/data_analysis_soy/intersect_cca_sbpa_f.vcf.gz 
 
-bcftools index intersect_cca_sbpa_f.vcf.gz
+bcftools index /home/joco/faststorage/data_analysis_soy/intersect_cca_sbpa_f.vcf.gz
 
 
 
