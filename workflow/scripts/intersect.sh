@@ -16,15 +16,25 @@ conda activate soy_data_setup
 
 cd /home/joco/faststorage/data_analysis_soy
 
+mkdir output_dir
+
+#intersect the two files
 bcftools isec cca_sbpa_Gm_only.vcf.gz founders_Gm_only.vcf.gz -p output_dir
 
-#the second file generated called 0002.vcf.gz contains the SNPs that are present in both input files.
+#merge
 
-bcftools view output_dir/0002.vcf.gz -Oz -o intersect_cca_sbpa_f.vcf.gz 
+#the second file generated called 0002.vcf.gz contains the SNPs that are present in the first input file but not in the second input file.
 
-bcftools index intersect_cca_sbpa_f.vcf.gz
+#the third file generated called 0003.vcf.gz contains the SNPs that are present in the second input file but not in the first input file.
 
+#to get the intersection of the two files we need to merge the second and third file. The --merge all option will merge the two files and keep only the SNPs that are present in both files.
+bgzip < /home/joco/faststorage/data_analysis_soy/output_dir/0002.vcf > /home/joco/faststorage/data_analysis_soy/output_dir/0002.vcf.gz
 
+bgzip < /home/joco/faststorage/data_analysis_soy/output_dir/0003.vcf > /home/joco/faststorage/data_analysis_soy/output_dir/0003.vcf.gz
 
+bcftools index /home/joco/faststorage/data_analysis_soy/output_dir/0002.vcf.gz
+bcftools index /home/joco/faststorage/data_analysis_soy/output_dir/0003.vcf.gz
 
+bcftools merge --merge all /home/joco/faststorage/data_analysis_soy/output_dir/0002.vcf.gz /home/joco/faststorage/data_analysis_soy/output_dir/0003.vcf.gz -Oz -o /home/joco/faststorage/data_analysis_soy/output_dir/intersect.vcf.gz
 
+bcftools index /home/joco/faststorage/data_analysis_soy/output_dir/intersect.vcf.gz
