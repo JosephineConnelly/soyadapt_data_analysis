@@ -73,3 +73,27 @@ according to chat gpt"When preparing a reference panel for use with Beagle, ther
 
 i am going to checking for sample duplication and remove with IBS/IBD thresholds of 95 or 99% to declare samples as identical. as in @pavan20
 ## 4. Generate metadata
+
+# H1
+
+# H2
+# H2 Fst
+# H2 pi
+# Theta calculation?
+# H2 LD
+viltered the populations seperetly using 
+
+vcftools --gzvcf snp_cca.vcf.gz --maf 0.05 --recode --stdout | bgzip -c > snp_cca_maf005.vcf.gz
+vcftools --gzvcf snp_sbpa.vcf.gz --maf 0.05 --recode --stdout | bgzip -c > snp_sbpa_maf005.vcf.gz
+# H3
+# H3 Fst
+filter total data at maf 5%
+vcftools --maf 0.05 then vcftools --weir-fst-pop cca.txt no window. 
+
+# H3 Tajimas D
+calculated with vcftools ref
+Tajimas D is calculated generally as follows
+pi - theta
+how the program does it. 
+
+https://github.com/vcftools/vcftools/blob/f7aee6d26885064d834199052573e31338240b76/src/cpp/variant_file_output.cpp#L3940
