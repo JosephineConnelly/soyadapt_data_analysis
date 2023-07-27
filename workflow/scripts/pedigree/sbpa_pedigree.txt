@@ -1,0 +1,170 @@
+offspring	parent1	parent2
+1196-26-43	990	Toshi-day 7910
+1196-A	990	Toshi-day 7910
+1196-A	990	Toshi-day 7910
+1286-10-7	1209	Bråvalla
+1286-17-7	1209	Bråvalla
+1287-14-3-6	1209	Träff
+1287-2-10	1209	Träff
+1287-3-4	1209	Träff
+1287-3-7	1209	Träff
+1341	Fiskeby V	C 873-8-7
+Fiskeby V x Gieso (population)	Fiskeby V	Gieso (population)
+Fiskeby V x Kita musume (population)	Fiskeby V	Kita musume (population)
+1262-29-11	1177-A	Amurskaja 310 
+1274-26-17-4	1177-A	Träff 
+1274-26-17-7	1177-A	Träff 
+1274-26-3-1	1177-A	Träff 
+1275-73-3	1177-A	1220-A
+1282-52-23	1177-A	Bråvalla-urval 
+1282-59-13	1177-A	Bråvalla-urval 
+1310-1-6-5	1177-A	1196-A
+1310-13-8	1177-A	1196-A
+1310-13-8-6	1177-A	1196-A
+1310-13-8-9	1177-A	1196-A
+1310-2-3-5	1177-A	1196-A
+1310-2-3-6	1177-A	1196-A
+1310-2-7	1177-A	1196-A
+1310-2-7-1	1177-A	1196-A
+1311-3-2-3	1177-A	1196-A
+1311-6-3-2	1177-A	1196-A
+1311-6-3-4	1177-A	1196-A
+1311-6-4	1177-A	1196-A
+1311-6-6-1	1177-A	1196-A
+1311-6-6-2	1177-A	1196-A
+1291-35-15	1196-A	Träff
+1291-35-6	1196-A	Träff
+1268-39-3	1200-A	Fiskeby V
+1268-39-4	1200-A	Fiskeby V
+1268-39-9	1200-A	Fiskeby V
+1268-50-11	1200-A	Fiskeby V
+1269-34-2	1200-A	Träff
+1296-1-10	1219-A	1300-A
+1296-10-3	1219-A	1300-A
+1296-10-6	1219-A	1300-A
+1296-14-1	1219-A	1300-A
+1296-21-6	1219-A	1300-A
+1296-23-2	1219-A	1300-A
+1296-3-8	1219-A	1300-A
+1296-31-5	1219-A	1300-A
+1278-11-1	1220-A	Bråvalla-urval
+1278-17-3	1220-A	Bråvalla-urval
+1278-21-4	1220-A	Bråvalla-urval
+1361 ((Bråvalla x Träff) x Maple Arrow)	1220-A	Maple Arrow
+1285-32-5	1236-A	Fiskeby V
+1285-53-2	1236-A	Fiskeby V
+1285-53-6	1236-A	Fiskeby V
+1285-53-8	1236-A	Fiskeby V
+1285-55-2	1236-A	Fiskeby V
+1285-6-10	1236-A	Fiskeby V
+1285-6-4	1236-A	Fiskeby V
+1285-8-2	1236-A	Fiskeby V
+1285-8-4	1236-A	Fiskeby V
+1289-4-6	1236-A	1196-A
+1290-28-15-7	1236-A	1196-A
+1290-28-16-4	1236-A	1196-A
+1290-28-4-2	1236-A	1196-A
+1290-28-4-7	1236-A	1196-A
+1290-28-5-2	1236-A	1196-A
+1290-28-6-3	1236-A	1196-A
+1290-28-6-4	1236-A	1196-A
+1290-28-7-3	1236-A	1196-A
+1290-28-7-6	1236-A	1196-A
+1290-28-7-9	1236-A	1196-A
+1308-1-3	1236-A	C 842-5
+1308-1-3-4	1236-A	C 842-5
+1308-1-3-6	1236-A	C 842-5
+1308-1-4-6	1236-A	C 842-5
+1308-1-7	1236-A	C 842-5
+1308-1-7-4	1236-A	C 842-5
+1308-1-8	1236-A	C 842-5
+1308-1-8-5	1236-A	C 842-5
+1308-23-9	1236-A	C 842-5
+1308-5	1236-A	C 842-5
+1308-5-2-6	1236-A	C 842-5
+1308-5-8-6	1236-A	C 842-5
+1308-7	1236-A	C 842-5
+1308-7-2-1	1236-A	C 842-5
+1308-7-4	1236-A	C 842-5
+1308-7-4-1	1236-A	C 842-5
+1308-7-4-2	1236-A	C 842-5
+1308-9-3	1236-A	C 842-5
+1308-9-3-4	1236-A	C 842-5
+1308-9-3-6	1236-A	C 842-5
+1301-14	1300-A	Bråvalla 
+1301-14-7	1300-A	Bråvalla 
+1301-14-9	1300-A	Bråvalla 
+1301-16-3	1300-A	Bråvalla 
+1312-13-6	1300-A	1220-A
+1312-13-6-7	1300-A	1220-A
+1312-13-8	1300-A	1220-A
+1312-13-8-4	1300-A	1220-A
+1312-16-6	1300-A	1220-A
+1312-16-6-2	1300-A	1220-A
+1312-16-6-4	1300-A	1220-A
+1312-17-1-1	1300-A	1220-A
+1312-17-1-2	1300-A	1220-A
+1312-17-2	1300-A	1220-A
+1312-17-2-2	1300-A	1220-A
+1312-17-2-6	1300-A	1220-A
+1312-17-3	1300-A	1220-A
+1312-17-3-1	1300-A	1220-A
+1312-17-3-3	1300-A	1220-A
+1312-17-3-5	1300-A	1220-A
+1312-17-3-7	1300-A	1220-A
+1312-17-3-8	1300-A	1220-A
+1312-17-4-2	1300-A	1220-A
+1312-21-1-4	1300-A	1220-A
+1312-21-1-5	1300-A	1220-A
+1312-21-9	1300-A	1220-A
+1312-21-9-10	1300-A	1196-A
+1312-21-9-6	1300-A	1220-A
+1312-22	1300-A	1220-A
+1312-22-10-1	1300-A	1196-A
+1312-22-8-2	1300-A	1196-A
+1312-22-9-3	1300-A	1196-A
+1312-24	1300-A	1220-A
+1312-24-1-3	1300-A	1196-A
+1312-24-1-6	1300-A	1196-A
+1312-24-5-1	1300-A	1196-A
+990	201-8-31-9 	843-11
+Träff 	840-2-7 	751-8-1-15
+Fiskeby V	856-3-8 	840-2-7
+1307	Bråvalla 	C 829 A-7 (population)
+1358	Bråvalla 	Mc Call
+1200-A	Bråvalla 	Severnaja
+1220-118-23	Bråvalla 	Träff
+1220-498-3	Bråvalla 	Träff
+1220-A	Bråvalla 	Träff
+Bråvalla-urval x Severnaja 4 	Bråvalla-urval 	Severnaja 4 
+Bråvalla-urval x Träff (population)	Bråvalla-urval 	Träff (population)
+1292-7-8	Bråvalla-urval x Severnaja 4 	Träff
+Bråvalla-urval x Träff	Bråvalla-urval x Träff (population)	C 940-2-9 
+1342	C 873-8-7 	Fiskeby V
+C 940-2-9 x 990 (population)	C 940-2-9 	990 (population)
+1353	C 940-3-6 	Träff
+1209	Fiskeby V-urval 	Smena
+1209-46-5-10	Fiskeby V-urval 	Smena
+1218-4-4	Fiskeby V-urval 	Bråvalla
+1219-90-1-8	Fiskeby V-urval 	Träff
+1219-A	Fiskeby V-urval 	Träff
+1297	Karafuto 	Träff (population)
+1297-20-2	Karafuto 	Träff
+Ooyachi x Fiskeby V	Ooyachi 	Fiskeby V
+Bråvalla	SP.Cp.22 B 	843-20-1 ( FISKEBY IV )
+1344	Träff 	Maple Arrow
+1345	Träff 	Mc Call
+1352	Träff 	C 940-3-6
+1177-3-1-6	Träff 	Fiskeby V
+1177-A	Träff 	Fiskeby V
+1236-4-6	Träff 	Bråvalla-urval
+1236-A	Träff 	Bråvalla-urval
+1298-6-3	Träff 	990
+1300-A	Träff 	Smena
+1300-A	Träff 	Smena
+Fiskeby III	Typ XX, st 9 	Nami Kava
+Ugra Soja	Wisconsin 	Brunatna Vilenska
+Bråvalla-urval	Bråvalla 	Bråvalla
+Träff (population)	Träff 	Träff
+990 (population)	990	990
+Fiskeby V-urval 	Fiskeby V	Fiskeby V
